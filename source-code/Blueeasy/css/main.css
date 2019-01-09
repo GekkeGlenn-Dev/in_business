@@ -1,0 +1,1021 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*collors  #4bcaff #515F67 #414A52(ovelay) #353f47  */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI";
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6, nav {
+    font-size: 2.5em;
+    color: white;
+}
+
+h2{
+    text-transform: uppercase;
+    background: none;
+    margin: 0 0 30px 0;
+    font-weight: 100;
+}
+h2 span {
+    background: none;
+    border-bottom: 2px solid white;
+    font-weight: 100;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+/* -------------------- Header -------------------- */
+
+
+
+header {
+    top: 0;
+    color: white;
+    background: rgba(68,78,86,0.7);
+    width: 100%;
+    position: absolute;
+}
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2.45em;
+}
+nav {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    font-weight: bold;
+    /*margin: 0 3px;*/
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+nav a:hover {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+
+}
+header span {
+    font-weight: bold;
+    color: #4bcaff;
+}
+
+
+/* -------------------- main -------------------- */
+
+
+
+main {
+
+}
+main h2 {
+    font-weight: 100;
+}
+main h2 span{
+    background: none;
+    border-bottom: 2px solid white;
+    font-weight: 100;
+}
+
+
+/* -------------------- sections -------------------- */
+/* -------------------- hero -------------------- */
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 50rem;
+    width: 100%;
+    background-image: url(../img/pictures/hero-foto.png);
+    background-position: 50%;
+    background-size: cover;
+}
+.hero div{
+    text-align: center;
+}
+.hero h2 {
+    font-weight: 100;
+    color: white;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 2em;
+    background: rgba(73, 84, 92, 0.8);
+}
+
+/* -------------------- services -------------------- */
+
+
+
+.services {
+    padding: 60px 5px;
+    color: white;
+    width: 100%;
+    background: #4bcaff;
+}
+.services h3 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 2em
+}
+.flex-services {
+    display: flex;
+    justify-content: space-between;
+}
+.service-desc p {
+    overflow: hidden;
+}
+.services p {
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+
+/* -------------------- portfolio -------------------- */
+
+
+
+.portfolio {
+    /*display: none;*/
+    padding: 60px 5px;
+    color: #515f67;
+    box-sizing: border-box;
+}
+.flex-portfolio {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio h2 { color: #353f46; }
+.portfolio h2 span { border-color: #353f46; }
+.portfolio .filter {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio .filter a{
+    font-family: "Segoe UI";
+    font-weight: bold;
+    margin: 0 3px;
+    padding: 5px 10px;
+    color: #626f76;
+    text-decoration: none;
+    border: none;
+}
+.portfolio .filter a:hover{
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+
+
+
+/* -------------------- gallery -------------------- */
+
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery-items {
+    position: relative;
+    width: 50%;
+    margin: 5px;
+    width: 230px;
+    height: 230px;
+}
+
+.image{
+    width: 230px;
+    height: 230px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .4s ease;
+    background: rgba(65,74,82,0);
+    opacity: 0;
+}
+.gallery-items:hover .overlay {
+    cursor: pointer;
+    background: rgba(65,74,82,0.8);
+    opacity: 1;
+
+}
+.overlay-text {
+  position: absolute;
+  font-size: 5em;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+/* -------------------- just-default -------------------- */
+
+.just-default{
+    padding: 60px 5px;
+    background: #515f67;
+}
+.flex-just-default {
+    display: flex;
+    justify-content: space-between;
+}
+.just-default-text {
+    width: 50%;
+    color: white;
+    padding-left: 2px;
+}
+.just-default-text p {
+    margin: 30px 0;
+    font-size: 1em;
+    padding-right: 20px;
+}
+.Vimeo {
+    width: 50%;
+}
+.Vimeo img {
+    width: 100%;
+}
+.btn {
+    padding: 5px 15px;
+    width: 30%;
+    font-weight: bold;
+    text-align: center;
+    color: #353f46;
+    text-decoration: none;
+    border: 2px solid #353f46;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background: #353f46;
+    color: white;
+}
+
+/* -------------------- twitter -------------------- */
+
+
+
+.twitter {
+    padding: 60px 5px;
+    background: #4bcaff;
+}
+.flex-twitter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.twitter a {
+    color: white;
+}
+.twitter a:hover {
+    color: #353f46;
+}
+.twitter h3 {
+    margin-bottom: 15px;
+}
+.twitter p, .twitter h3 {
+    font-size: 1.8em;
+    font-weight: 100;
+    color: white;
+}
+.twitter a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+
+}
+
+/* -------------------- john-doe -------------------- */
+
+.john-doe {
+    padding: 60px 5px;
+    color: white;
+    background-image: url(../img/pictures/background-john-doe.png);
+    background-position: 50%;
+    background-size: cover;
+}
+ .john-doe .container {
+    display: flex;
+    justify-content: space-between;
+}.flex-john-doe{
+    display: flex;
+    justify-content: left;
+}
+.john-doe-desc-1 p{
+    margin: 30px 0;
+}
+.john-doe-desc-2 p{
+    margin: 87px 0 30px 0;
+
+}
+.john-doe a {
+    margin: 0 5px;
+    color: white;
+    padding: 7.5px;
+    border: 2px solid white;
+}
+.john-doe a:hover {
+    color: #353f46;
+    background: white;
+}
+.john-doe a:first-child{ margin-left: 0px; } 
+.john-doe a:last-child { margin-right: 0; }
+
+
+
+/* -------------------- testimonials -------------------- */
+
+
+
+.testimonials {
+    padding: 60px 5px;
+    color: #353f46;
+    background: white;
+
+}
+.testimonials .description{
+    font-size: 1.2em;
+    margin: 30px 0;
+}
+.description-line-distance {
+    margin-bottom: 5px;
+}
+.testimonials h2 { color: #353f46; margin-bottom: 30px;}
+.testimonials h2 span { border-color: #353f46; }
+.testimonials .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials .quota{
+    font-family: Bitter;
+    font-weight: bold;
+    font-size: 6em;
+}
+.writer {
+    margin-top: 15px;
+    color: #4bcaff;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+/* -------------------- contact -------------------- */
+.contact {
+    color: white;
+    background-image: url(../img/pictures/contact-background.png);
+    background-size: cover;
+    background-position: 50%;
+    padding: 60px 5px;
+}
+.forms-inputs-and-desc {
+    display: flex;
+    justify-content: space-between;
+}
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-inputs {
+    width: 50%;
+}
+.contact-desc {
+    width: 50%;
+}
+.contact-desc div {
+    margin-top: 15px;
+}
+label {
+    font-weight: normal;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-inputs input {
+    background: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-weight: normal;
+    color: white;
+    padding: 5px;
+    display: block;
+    width: 75%;
+}
+.contact textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-weight: normal;
+    color: white;
+    padding: 5px;
+}
+.submit-btn {
+    background: #4bcaff;
+    margin-top: 20px;
+    width: 25%;
+    padding: 10px 0;
+    border: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.submit-btn:hover {
+    cursor: pointer;
+    width: 50%;
+}
+/* -------------------- end sections -------------------- */
+
+
+
+/* -------------------- Footer -------------------- */
+
+footer {
+    color: #515f67;
+    padding: 60px 5px;
+    background: #353f47;
+
+}
+footer .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav a {
+    color: #515f67;
+    text-decoration: none;
+}
+.footer-nav p {
+    margin: 0 5px;
+}
+.footer-nav a:hover {
+    color: white;
+}
+
+
+
+/* -------------------- Responsive -------------------- */
+
+
+
+@media only screen and (max-width: 959px) {
+
+    /* ------------------------ header ------------------------ */
+
+    .container {
+        padding: 5%;
+    }
+
+    /* ------------------------ hero ------------------------ */
+    
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    /* ------------------------ services ------------------------ */
+    
+    .flex-services {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .service-desc {
+        width: 40%;
+        margin: 15px 0;
+    }
+
+    /* ------------------------  ------------------------ */
+    
+    
+    
+}
+@media only screen and (max-width: 835px) {
+    .flex-portfolio {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .portfolio .filter {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .flex-just-default {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .just-default-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Vimeo {
+        width: 100%;
+    }
+    .Vimeo img {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 675px) {
+
+    /* ------------------------ header ------------------------ */
+
+    .flex-header {
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav {
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    /* ------------------------ portfolio ------------------------ */
+
+    .flex-portfolio {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 625px) {
+    .hero h2 {
+        font-size: 1em;
+    }
+    .john-doe .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .flex-services {
+        flex-direction: column;   
+    }
+    .service-desc {
+
+        width: 90%;
+        margin: 30px 5%;
+    }
+
+    /* ------------------------ portfolio ------------------------ */
+    .flex-portfolio {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .portfolio .container {
+        padding: 0;
+    }
+    .portfolio .filter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .filter a:last-child {
+        grid-column: 1/3;
+    }
+    .filter a {
+        text-align: center;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery-items{
+        width: 100%;
+        margin: 0;
+    }
+    .gallery-items img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    nav a:last-child {
+        grid-column: 1/3;
+    }
+
+
+
+    
+}
+@media only screen and (max-width: 444px) {
+    
+    body {
+        font-size: 0.9em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    /* ------------------------ header ------------------------ */
+    .twitter p, .twitter h3 {
+        font-size: 1.3em;
+    }
+    .flex-header {
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav {
+        display: grid;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    nav a {
+        text-align: center;
+        width: 50%;
+
+    }
+    nav a:last-child {
+        width: 100%;
+    }
+    nav a:hover {
+        color: white;
+        background: #4bcaff;
+        border: none;
+    }
+
+    /* ------------------------ portfolio ------------------------ */
+    
+    .portfolio .filter {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .filter a {
+        text-align: center;
+
+    }
+    .filter a:hover {
+        color: white;
+        background: #4bcaff;
+        border: none;
+    }
+    .filter a:last-child {
+        grid-column: 1;
+    }
+
+    /* ------------------------ john doe ------------------------ */
+    .john-doe-desc-2 p {
+        margin-top: 0;
+    }
+    /* ------------------------ testimonials ------------------------ */
+    .quota {
+        display: none;
+    }
+
+    /* ------------------------ contact ------------------------ */
+
+    .forms-inputs-and-desc {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form-inputs {
+        margin-top: 20px;
+        width: 100%;
+    }.form-inputs input {
+        margin-bottom: 10px;
+    }
+    .contact-desc {
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+
+    /* ------------------------ contact ------------------------ */
+
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
